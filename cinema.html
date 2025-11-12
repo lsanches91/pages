@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário - Ingresso de Cinema</title>
+</head>
+
+<body>
+  <h2>Solicitação de Ingresso de Cinema</h2>
+
+  <form>
+    <!-- Nome -->
+    <label>Nome completo:</label><br>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <!-- Email -->
+    <label for="email">E-mail:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Idade -->
+    <label for="idade">Idade:</label><br>
+    <input type="number" id="idade" name="idade" min="1" max="120"><br><br>
+
+    <!-- Gênero do filme -->
+    <label>Gênero do filme:</label><br>
+    <input type="radio" id="acao" name="genero" value="Ação">
+    <label for="acao">Ação</label><br>
+    <input type="radio" id="comedia" name="genero" value="Comédia">
+    <label for="comedia">Comédia</label><br>
+    <input type="radio" id="terror" name="genero" value="Terror">
+    <label for="terror">Terror</label><br><br>
+
+    <!-- Serviços adicionais -->
+    <label>Deseja incluir:</label><br>
+    <input type="checkbox" id="pipoca" name="extras" value="Pipoca">
+    <label for="pipoca">Pipoca</label><br>
+    <input type="checkbox" id="refrigerante" name="extras" value="Refrigerante">
+    <label for="refrigerante">Refrigerante</label><br><br>
+
+    <!-- Sessão -->
+    <label for="sessao">Escolha a sessão:</label><br>
+    <select id="sessao" name="sessao">
+      <option value="14h">14h</option>
+      <option value="16h">16h</option>
+      <option value="18h">18h</option>
+      <option value="20h">20h</option>
+    </select><br><br>
+
+    <!-- Data -->
+    <label for="data">Data da sessão:</label><br>
+    <input type="date" id="data" name="data"><br><br>
+
+    <!-- Comentários -->
+    <label for="comentario">Comentário ou pedido especial:</label><br>
+    <textarea id="comentario" name="comentario" rows="4" cols="20" maxlength="15"></textarea><br><br>
+
+    <!-- Botão -->
+    <button type="submit">Reservar Ingresso</button>
+  </form>
+</body>
+
+</html>
